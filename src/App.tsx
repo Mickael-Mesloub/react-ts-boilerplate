@@ -1,4 +1,3 @@
-import './App.scss';
 import theme from './ui/theme.constants';
 
 const App = () => {
