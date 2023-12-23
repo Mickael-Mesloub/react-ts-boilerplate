@@ -1,0 +1,13 @@
+@import './ui/themes/_theme';
+@import './ui/themes/_layout';
+@import './ui/themes/_reusable-styles';
+@import './ui/themes/_media-querries';
+
+#root {
+  font-family: $fontFamilyPoppins, serif;
+}
+
+body,
+main {
+  @include flex;
+}

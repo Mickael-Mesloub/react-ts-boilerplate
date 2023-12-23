@@ -1,19 +1,7 @@
-import theme from './ui/theme.constants';
+import HomePage from './ui/pages/home/HomePage';
 
 const App = () => {
-  return (
-    <>
-      <div>
-        <p style={styles.title}>Mon super titre</p>
-      </div>
-    </>
-  );
+  return <HomePage />;
 };
 
 export default App;
-
-const styles = {
-  title: {
-    fontFamily: theme.fontFamily.poppins,
-  },
-};
