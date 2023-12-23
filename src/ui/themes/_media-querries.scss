@@ -1,0 +1,61 @@
+// breakpoints
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 1000px;
+$breakpoint-xlarge: 1200px;
+$breakpoint-xxlarge: 1440px;
+
+// rules
+$screen-small:  (max-width: $breakpoint-medium - 1);
+$screen-medium: screen and (min-width: $breakpoint-medium);
+$screen-large: (min-width: $breakpoint-large) and (max-width: $breakpoint-xlarge - 1);
+$screen-xlarge: (min-width: $breakpoint-xlarge) and (max-width: $breakpoint-xxlarge - 1);
+$screen-xxlarge: (min-width: $breakpoint-xxlarge);
+
+@mixin screen-small($min-width: $breakpoint-small, $max-width: $breakpoint-medium) {
+    @media screen and (min-width: $min-width) and (max-width: ($max-width - 1)) {
+        @content;
+    }
+}
+
+@mixin screen-medium($min-width: $breakpoint-medium, $max-width: $breakpoint-large) {
+    @media screen and (min-width: $min-width) and (max-width: ($max-width - 1)) {
+        @content;
+    }
+}
+
+@mixin screen-large($min-width: $breakpoint-large, $max-width: $breakpoint-xlarge)  {
+    @media screen and (min-width: $min-width) and (max-width: ($max-width - 1)) {
+        @content;
+    }
+}
+
+@mixin screen-xlarge($min-width: $breakpoint-xlarge, $max-width: $breakpoint-xxlarge) {
+    @media screen and (min-width: $min-width)  and (max-width: ($max-width - 1)) {
+        @content;
+    }
+}
+
+@mixin screen-xxlarge($min-width: $breakpoint-xxlarge) {
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}
+
+
+// Examples of use
+// .element {
+//   width: 100%;
+
+//   @media #{$screen-medium} {
+//     width: 80%;
+//   }
+
+//   @media #{$screen-large} {
+//     width: 60%;
+//   }
+
+//   @media #{$screen-xlarge} {
+//     width: 40%;
+//   }
+// }

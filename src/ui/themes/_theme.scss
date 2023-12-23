@@ -1,0 +1,74 @@
+// color
+$primary: #128dde;
+$secondary: #254b9e;
+$success: #25a45a;
+$danger: rgb(209, 58, 58);
+$white: #fff;
+$gray1: #e2e2e2;
+$gray2: #cccccc;
+$gray3: #b7b7b7;
+$gray4: #9d9d9d;
+$black: #000;
+
+// font-family
+$fontFamilyPoppins: 'Poppins';
+$fontFamilyKalnia: 'Kalnia', serif;
+
+// spacing
+$spacingQuarterSm: 2px;
+$spacingQuarter: 4px;
+$spacingDemi: 8px;
+$spacingDemiLG: 10px;
+$spacingDemiXL: 12px;
+$spacingBaseSm: 14px;
+$spacingBase: 16px;
+$spacingBaseLg: 20px;
+$spacingBaseXl: 24px;
+$spacingDoubleSm: 28px;
+$spacingDouble: 32px;
+$spacingTriple: 48px;
+$spacingInput: 56px;
+$spacingQuadruple: 64px;
+$spacingQuintuple: 80px;
+$spacingSixfold: 96px;
+$spacingOctuple: 128px;
+
+// font-size
+$fontSizeXxs: 11px;
+$fontSizeXs: 12px;
+$fontSizeSm: 14px;
+$fontSizeMd: 16px;
+$fontSizeLg: 18px;
+$fontSizeLg2: 20px;
+$fontSizeXl: 22px;
+$fontSizeXl2: 24px;
+$fontSizeXl3: 26px;
+$fontSizeXl6: 45px;
+
+// font-weight
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemibold: 600;
+$fontWeightBold: 700;
+
+// radius
+$radiusFull: 9999px;
+$radiusDemi: 4px;
+$radiusBase: 8px;
+$radiusBaseLg: 10px;
+$radiusBaseLg2: 12px;
+$radiusDouble: 16px;
+$radiusTriple: 25px;
+$radiusQuadruple: 32px;
+
+// opacity
+$opacityQuarter: 0.75;
+$opacityHalf: 0.5;
+$opacityFull: 1;
+
+// box-shadow
+$shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+$shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
+$shadow-hover: 0 12px 24px rgba(0, 0, 0, 0.4);
