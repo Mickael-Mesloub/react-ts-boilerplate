@@ -30,7 +30,6 @@
   $margin: 0,
   $padding: $spacingBase,
   $border: 1px solid $gray2,
-  $border-color: $gray2,
   $border-radius: $spacingQuarter,
   $width: 95%,
   $shadow: $shadow-medium
@@ -38,7 +37,6 @@
   margin: $margin;
   padding: $padding;
   border: $border;
-  border-color: $border-color;
   border-radius: $border-radius;
   width: $width;
   box-shadow: $shadow;
@@ -63,16 +61,3 @@
     width: 35%;
   }
 }
-
-// Examples of use
-//   .myFlexContainer {
-//     @include flex($direction: column, $justify: center, $align: center);
-//   }
-
-//   .myGridContainer {
-//     @include grid($columns: repeat(2, 1fr), $gap: 20px);
-//   }
-
-//   .myBox {
-//     @include boxModel($margin: 10px, $padding: 20px, $border-radius: 8px);
-//   }
