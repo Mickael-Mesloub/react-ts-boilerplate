@@ -1,0 +1,13 @@
+@import '../../themes/_layout';
+@import '../../themes/_theme';
+
+.toggle-icon {
+  @include flex();
+  height: 100%;
+  color: $yellow;
+}
+
+.theme-toggle-btn {
+  @include flex($align: flex-end);
+  padding: $spacingBase;
+}
