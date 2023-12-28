@@ -1,7 +1,13 @@
 import HomePage from './ui/pages/home/HomePage';
+import { useTheme } from './contexts/ThemeContext';
 
 const App = () => {
-  return <HomePage />;
+  const { isDarkMode } = useTheme();
+  return (
+    <div id={`container${isDarkMode ? '-dark' : '-light'}`}>
+      <HomePage />
+    </div>
+  );
 };
 
 export default App;

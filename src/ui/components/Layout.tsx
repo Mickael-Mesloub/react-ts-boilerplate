@@ -1,3 +1,5 @@
+import ThemeSwitch from './ThemeSwitch';
+
 interface LayoutProps {
   children: JSX.Element;
 }
@@ -5,6 +7,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
+      <ThemeSwitch />
       <main>{children}</main>
     </>
   );

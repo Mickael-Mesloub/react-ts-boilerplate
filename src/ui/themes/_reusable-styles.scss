@@ -88,6 +88,14 @@
   }
 }
 
+.card-dark {
+  border-color: $primary;
+
+  & .card-content {
+    color: $white;
+  }
+}
+
 // Headings
 .heading {
   font-size: 2rem;
