@@ -6,7 +6,9 @@ import './styles/theme-switch-styles.scss';
 
 const ThemeSwitch = () => {
   const { isDarkMode, toggleTheme } = useTheme();
+
   const { uncheckedIcon, checkedIcon } = useToggleIcon({
+    //TODO - Change icons here if needed
     lightIcon: <FaMoon />,
     darkIcon: <FaSun />,
   });
@@ -15,6 +17,7 @@ const ThemeSwitch = () => {
       <ReactSwitch
         onChange={toggleTheme}
         checked={isDarkMode}
+        //TODO - Change colors here if needed
         offColor="#0d1d3e"
         onColor="#128dde"
         offHandleColor="#fff"
