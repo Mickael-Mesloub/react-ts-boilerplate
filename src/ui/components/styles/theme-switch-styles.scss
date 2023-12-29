@@ -1,0 +1,14 @@
+@import '../../themes/_layout';
+@import '../../themes/_theme';
+
+//TODO - Change colors and button position here if needed
+.toggle-icon {
+  @include flex();
+  height: 100%;
+  color: $yellow;
+}
+
+.theme-toggle-btn {
+  @include flex($align: flex-end);
+  padding: $spacingBase;
+}
