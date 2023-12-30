@@ -20,11 +20,13 @@ main {
 #container-light {
   background-color: $white;
   min-height: 100vh;
+  min-height: 100svh;
   transition: background-color 0.3s ease-in-out;
 }
 
 #container-dark {
   background-color: $dark-blue;
   min-height: 100vh;
+  min-height: 100svh;
   transition: background-color 0.3s ease-in-out;
 }
