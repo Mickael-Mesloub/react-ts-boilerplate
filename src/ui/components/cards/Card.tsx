@@ -1,3 +1,5 @@
+import './Card-styles.scss';
+
 interface CardProps {
   isDarkMode: boolean;
   cardTitle: string;

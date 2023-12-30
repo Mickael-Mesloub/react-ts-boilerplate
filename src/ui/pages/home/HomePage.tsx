@@ -1,4 +1,4 @@
-import Card from '../../../components/cards/Card';
+import Card from '../../components/cards/Card';
 import { useTheme } from '../../../contexts/ThemeContext';
 import Layout from '../../components/Layout';
 
