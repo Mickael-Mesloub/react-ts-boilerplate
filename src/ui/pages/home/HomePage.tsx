@@ -12,6 +12,7 @@ const HomePage = () => {
         cardTitle={'Card title'}
         cardSubtitle={'Card subtitle'}
         cardContent={'Card content'}
+        hasButton={true}
         buttonTitle={'Read more'}
       />
     </Layout>

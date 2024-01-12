@@ -5,8 +5,9 @@ interface CardProps {
   cardTitle: string;
   cardSubtitle?: string;
   cardContent: string;
+  hasButton: boolean;
   buttonType?: string;
-  buttonTitle: string;
+  buttonTitle?: string;
 }
 
 const Card = ({
@@ -14,6 +15,7 @@ const Card = ({
   cardTitle,
   cardSubtitle,
   cardContent,
+  hasButton,
   buttonType,
   buttonTitle,
 }: CardProps) => {
@@ -26,11 +28,15 @@ const Card = ({
         {cardSubtitle && <h2 className="sub-heading">{cardSubtitle}</h2>}
 
         <p className="card-content">{cardContent}</p>
-        <div className="card-footer">
-          <div className={`button${buttonType ? ` ${buttonType}-button` : ''}`}>
-            {buttonTitle}
+        {hasButton && (
+          <div className="card-footer">
+            <button
+              className={`button${buttonType ? ` ${buttonType}-button` : ''}`}
+            >
+              {buttonTitle}
+            </button>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
