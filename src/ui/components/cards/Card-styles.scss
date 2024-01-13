@@ -1,0 +1,48 @@
+@import '../../themes/_theme';
+@import '../../themes/_layout';
+
+// Cards
+.card {
+  @include boxModel($padding: $spacingDemi);
+  margin-bottom: $spacingDemiXL;
+
+  &-header {
+    @include flex($direction: row, $justify: center);
+    background-color: $primary;
+    color: $white;
+    padding: $spacingDemi;
+  }
+
+  &-body {
+    padding: $spacingDemi;
+  }
+
+  &-footer {
+    text-align: center;
+    margin: $spacingBase $spacingDemi $spacingDemi;
+  }
+}
+
+//TODO - Change colors here if needed
+.card-dark {
+  border-color: $primary;
+
+  & .card-content {
+    color: $white;
+  }
+}
+
+// Headings
+.heading {
+  font-size: 2rem;
+  font-weight: $fontWeightSemibold;
+  color: $white;
+  text-align: center;
+  width: '100%';
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  color: $primary;
+  margin-bottom: $spacingDemi;
+}
