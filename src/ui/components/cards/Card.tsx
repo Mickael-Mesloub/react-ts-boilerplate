@@ -1,3 +1,4 @@
+import CustomButton, { ButtonType } from '../CustomButton';
 import './Card-styles.scss';
 
 interface CardProps {
@@ -6,7 +7,7 @@ interface CardProps {
   cardSubtitle?: string;
   cardContent: string;
   hasButton: boolean;
-  buttonType?: string;
+  buttonType?: ButtonType;
   buttonTitle?: string;
 }
 
@@ -30,11 +31,7 @@ const Card = ({
         <p className="card-content">{cardContent}</p>
         {hasButton && (
           <div className="card-footer">
-            <button
-              className={`button${buttonType ? ` ${buttonType}-button` : ''}`}
-            >
-              {buttonTitle}
-            </button>
+            <CustomButton text={buttonTitle} type={buttonType} />
           </div>
         )}
       </div>
