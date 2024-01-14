@@ -14,6 +14,7 @@ const HomePage = () => {
         cardContent={'Card content'}
         hasButton={true}
         buttonTitle={'Read more'}
+        buttonType="primary"
       />
     </Layout>
   );
