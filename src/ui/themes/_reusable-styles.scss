@@ -6,7 +6,7 @@
   &,
   &:link,
   &:visited {
-    @include boxModel($padding: $spacingDemi, $border-radius: $radiusBase);
+    @include boxModel($padding: $spacingDemi, $border-radius: $radiusFull);
     display: inline-block;
     text-align: center;
     text-decoration: none;
