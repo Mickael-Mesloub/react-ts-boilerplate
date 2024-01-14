@@ -14,13 +14,18 @@
     font-weight: $fontWeightSemibold;
     cursor: pointer;
     color: $white;
-    background-color: $primary;
-    border-color: $primary;
+    background-color: $black;
+    border-color: $black;
 
     &:hover {
       opacity: 0.85;
     }
   }
+}
+
+.button-primary {
+  background-color: $primary;
+  border-color: $primary;
 }
 
 .button-secondary {
@@ -34,8 +39,8 @@
 }
 
 .button-error {
-  background-color: $danger;
-  border-color: $danger;
+  background-color: $error;
+  border-color: $error;
 }
 
 .button-disabled {
